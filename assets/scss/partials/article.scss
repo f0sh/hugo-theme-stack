@@ -265,3 +265,24 @@
         }
     }
 }
+
+.category {
+
+    color: #fff;
+
+    &-red { 
+        background-color: #df7988;
+    }
+    &-green { 
+        background-color: #8ea885;
+    }
+    &-blue { 
+        background-color: #0177b8;
+    }
+    &-darkred { 
+        background-color: #DB344B;
+    }
+    &-turkuise { 
+        background-color: #2a9d8f;
+    }
+}
