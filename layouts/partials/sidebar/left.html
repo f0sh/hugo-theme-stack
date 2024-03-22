@@ -82,7 +82,9 @@
                     {{ partial "helper/icon" "language" }}
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         {{ range . }}
+                            {{ if not (default false .Language.Params.Disabled) }}
                             <option value="{{ .Permalink }}" {{ if eq .Language.Lang $currentLanguageCode }}selected{{ end }}>{{ .Language.LanguageName }}</option>
+                            {{ end }}
                         {{ end }}
                     </select>
                 </li>
